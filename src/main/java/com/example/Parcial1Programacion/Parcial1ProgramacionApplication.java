@@ -8,6 +8,7 @@ public class Parcial1ProgramacionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Parcial1ProgramacionApplication.class, args);
+		System.out.println("FUNCIONO BIEN");
 	}
 
 }
