@@ -13,5 +13,6 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona,Long> implements
 
     public PersonaServiceImpl(BaseRepository<Persona,Long> baseRepository, PersonaRepository personaRepository) {
         super(baseRepository);
+        this.personaRepository = personaRepository;
     }
 }

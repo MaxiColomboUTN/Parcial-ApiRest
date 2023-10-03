@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-
+@Table(name = "persona")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -28,7 +28,7 @@ private int dni;
     private Domicilio domicilio;
 
 //ONE TO MANY
-        @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
     @JoinTable(
             name = "persona_libro",
             joinColumns = @JoinColumn(name = "persona_id"),
