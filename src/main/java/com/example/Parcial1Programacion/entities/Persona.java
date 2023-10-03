@@ -28,7 +28,7 @@ private int dni;
     private Domicilio domicilio;
 
 //ONE TO MANY
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
+        @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "persona_libro",
             joinColumns = @JoinColumn(name = "persona_id"),
